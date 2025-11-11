@@ -1,5 +1,4 @@
-#!/bin/bash
-set -e  # Exit on any error
+set -e
 
 echo "Installing root dependencies..."
 npm install
@@ -12,8 +11,7 @@ cd ..
 echo "Installing frontend dependencies..."
 cd frontend
 npm install
-
-echo "Building frontend..."
 npm run build
+cd ..
 
-echo "Build completed successfully! ✅"
+echo "Build completed! ✅"
